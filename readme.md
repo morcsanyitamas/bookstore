@@ -207,3 +207,4 @@ Hozz létre egy új branchet `feature/add-language` néven, és adj hozzá egy �
 - Hozz létre egy pull requestet a `feature/add-language` branchre, és merge-eld a `main` branchre.
 
 ### Kiegészítések
+---
