@@ -1,0 +1,14 @@
+# Ignore all .log files
+*.log
+
+# Do not ignore error.log, even though .log files are ignored above
+!error.log
+
+# Ignore the config.json file in the root directory only
+/config.json
+
+# Ignore all files in any directory named temp
+temp/
+
+# Ignore all .tmp files in the logs/ directory and its subdirectories
+logs/**/*.tmp
