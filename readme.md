@@ -245,9 +245,11 @@ A "Pál utcai fiúk" könyv tévesen, - többször - szerepel a `books.json` fá
 
 ### `.gitignore` fájl létrehozása
 Hozz létre egy `.gitignore` fájlt, amely kizárja a `*.tmp` kiterjesztésű fájlokat a verziókövetésből.
+
 **Feladatok**:
 - Hozz létre egy `.gitignore` nevű fájlt a repository gyökérkönyvtárában.
 - Hozz létre egy `test.tmp` nevű fájlt a repository-ban, és ellenőrizd, hogy a Git figyelmen kívül hagyja azt.
+
 **Kritériumok**:
 - A `.gitignore` fájl tartalmazza a megfelelő szabályt.
 - A `test.tmp` fájl ne jelenjen meg a `git status` kimenetében.
@@ -255,6 +257,7 @@ Hozz létre egy `.gitignore` fájlt, amely kizárja a `*.tmp` kiterjesztésű f�
 
 ### Új könyv hozzáadása
 Adj hozzá egy új könyvet a `books.json` fájlhoz az alábbi adatokkal.
+
 **Feladatok**:
 - Adj hozzá egy új könyvet a `books.json` fájlhoz:
   ```json
@@ -271,18 +274,21 @@ Adj hozzá egy új könyvet a `books.json` fájlhoz az alábbi adatokkal.
 
 ### A "láthatatlan ember" bevezetése a main branchre
 A Cherry-pick parancs segítségével vidd át a `feature/add-invisible-man` branchen lévő commitot a `main` branchre.
+
 **Feladatok**:
 - Használj cherry-pick parancsot a `feature/add-invisible-man` branchen lévő commit átvitelére a `main` branchre.
 - Amennyiben felmerül, oldd fel a konfliktust úgy, hogy a `books.json` fájl tartalma helyes legyen.
+
 **Kritériumok**:
 - A `main` ág tartalmazza a "láthatatlan ember" könyvet.
 
 ### Nagybetűsítés
 A könyvek jellemzőit nagybetűsítve szeretnéd látni a books.json fájlban
+
 **Feladatok**:
 - Hozz létre egy új branch-et `feature/capitalize-attributes` néven.
-- Használj egy scriptet, amely nagybetűsítve írja ki a könyvek jellemzőit a `books.json` fájlban.
 - Mentsd el a változtatásokat egy commitban.
+
 **Kritériumok**:
 - Az új branch neve legyen `feature/capitalize-attributes`.
 - A `books.json` fájl tartalmazza a nagybetűsített jellemzőket.
@@ -290,10 +296,12 @@ A könyvek jellemzőit nagybetűsítve szeretnéd látni a books.json fájlban
 
 ### Oldalszám hozzáadása
 Vezesd be a könyvekhez tartalmazó oldalszámot a `books.json` fájlban.
+
 **Feladatok**:
 - Hozz létre egy új branch-et `feature/add-page-count` néven.
 - Adj hozzá egy "Oldalszám" tulajdonságot a `books.json` fájlhoz, amely minden könyvnél egy számot tartalmaz (pl. 200, 300).
 - Mentsd el a változtatásokat egy commitban.
+
 **Kritériumok**:
 - Az új branch neve legyen `feature/add-page-count`.
 - A `books.json` fájl tartalmazza az "Oldalszám" tulajdonságot minden könyvnél.
@@ -301,14 +309,18 @@ Vezesd be a könyvekhez tartalmazó oldalszámot a `books.json` fájlban.
 - Legyen legalább egy commit a branchen.
 
 ### Mergeld a `feature/capitalize-attributes` branchet a `main` branchre
+
 **Feladat**: Merge-eld a `feature/capitalize-attributes` branchet a `main` branchre.
+
 **Kritériumok**:
 - A `main` ág tartalmazza a nagybetűsített jellemzőket.
 - A merge során oldd fel a konfliktusokat, ha szükséges.
 
 ### Aktualizáld a `feature/add-page-count` branchet a `main` branch alapján
+
 **Feladat**: Frissítsd a `feature/add-page-count` branchet a `main` branch alapján.
+
 **Kritériumok**:
 - A `feature/add-page-count` branch tartalmazza a `main` branch legfrissebb változásait, vagyis a nagybetűsített jellemzőket.
-- A main branch változtatásai legyenek rebase-elve a `feature/add-page-count` branchre.
+- A main branch változtatásai legyenek **rebase-elve** a `feature/add-page-count` branchre.
 - A konfliktusok legyenek feloldva, és a `books.json` fájl tartalma helyes legyen.
